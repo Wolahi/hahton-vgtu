@@ -1,0 +1,74 @@
+---
+parser: '@typescript-eslint/parser'
+
+env:
+  browser: true
+  es2021: true
+  jest: true
+
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:react/recommended
+  - 'plugin:jest/recommended'
+  - 'plugin:import/errors'
+  - 'plugin:import/warnings'
+  - 'plugin:prettier/recommended'
+  - 'plugin:react-hooks/recommended'
+
+settings:
+  import/resolver:
+    node: { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }
+
+parserOptions:
+  project: './tsconfig.json'
+
+plugins:
+  - '@typescript-eslint'
+  - react
+  - prettier
+
+rules:
+  import/no-extraneous-dependencies: 'off'
+  import/prefer-default-export: 'off'
+  import/extensions: 0
+  react/prop-types: 1
+  react/button-has-type: 'warn'
+  react/jsx-no-constructed-context-values: 'warn'
+  no-console: 'warn'
+  no-param-reassign: 'warn'
+  consistent-return: 'warn'
+  functional/no-conditional-statement: 0
+  functional/no-expression-statement: 0
+  functional/immutable-data: 0
+  functional/functional-parameters: 0
+  functional/no-try-statement: 0
+  functional/no-throw-statement: 0
+  react/react-in-jsx-scope: 0
+  react/function-component-definition: 0
+  '@typescript-eslint/explicit-function-return-type': 'warn'
+  '@typescript-eslint/no-unused-vars': 'error'
+  '@typescript-eslint/prefer-readonly-parameter-types': 0
+  '@typescript-eslint/no-empty-function': 0
+  'functional/no-return-void': 0
+  'functional/prefer-readonly-type': 0
+  'functional/no-mixed-type': 'off'
+  functional/no-class: 'off'
+  functional/no-let: 'off'
+  'no-return-await': 'off'
+  functional/no-this-expression: 'off'
+  'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }]
+  'max-len': ['warn', { 'code': 100 }]
+  'no-let': 'off'
+  'no-shadow': 'off'
+  'react/self-closing-comp': 'off'
+  'react/jsx-props-no-spreading': 'off'
+  'react-hooks/exhaustive-deps': 'off'
+  'react/require-default-props': 'off'
+  'react/jsx-no-useless-fragment': 'warn'
+  'jsx-a11y/click-events-have-key-events': 'off'
+  'camelcase': 'off'
+  'quotes': [1, 'single', { 'avoidEscape': true }]
+  'prettier/prettier': 'error'
+  '@typescript-eslint/ban-ts-comment': 'warn'
+  'react/no-unknown-property': ['warn', { ignore: ['jsx'] }]
