@@ -3,7 +3,6 @@ REACT_APP_AUTH_URL='http://158.160.14.210:32100' \
 REACT_APP_API_URL='http://158.160.14.210:32100' \
 REACT_APP_GRAPHQL_URL='http://158.160.14.210:32100/graphql'
 
-servePort = 4000
 
 
 install: install-deps
@@ -19,7 +18,6 @@ serveBuild:
 
 build:
 	$(envs) npx react-inject-env set && $(envs) DISABLE_ESLINT_PLUGIN=true npm run build
-	serveBuild
 
 test:
 	npm test -s
