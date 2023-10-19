@@ -28,9 +28,11 @@ const SideBar = () => {
   const nagivate = useNavigate();
   return (
     <div className={styles.root}>
-      <Link to={'/'}>
-        <img className={styles.logo} src={VgtuLogo} />
-      </Link>
+      <div className={styles.logoWrapper}>
+        <Link to={'/'}>
+          <img className={styles.logo} src={VgtuLogo} />
+        </Link>
+      </div>
       <Menu
         mode="inline"
         items={itemsMenu}
