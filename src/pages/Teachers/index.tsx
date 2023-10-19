@@ -1,5 +1,7 @@
+import Teacherpage from '../../features/teachers';
+
 const Teachers = () => {
-  return <div>Teachers</div>;
+  return <Teacherpage />;
 };
 
 export default Teachers;
