@@ -17,7 +17,7 @@ serveBuild:
 	serve -s build -l $(servePort)
 
 build:
-	$(envs) npx react-inject-env set && $(envs) DISABLE_ESLINT_PLUGIN=true npm run build
+	DISABLE_ESLINT_PLUGIN=true npm run build
 
 test:
 	npm test -s
