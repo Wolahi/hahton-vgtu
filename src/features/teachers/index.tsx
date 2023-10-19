@@ -28,7 +28,17 @@ const Teacherpage = () => {
             <Avatar src={<img src={''} alt="avatar" />} />
           </Space>
         </div>
-        <div className={styles.text}>Фамилия Имя Отчество</div>
+        <div className={styles.text}>
+          Фамилия Имя Отчество
+          <br />
+          Должность
+          <br />
+          Телефон | Почта
+          <br />
+          Ученая степень
+          <br />
+          Кафедра
+        </div>
       </div>
     </div>
   );
