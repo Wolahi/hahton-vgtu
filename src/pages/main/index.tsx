@@ -1,5 +1,7 @@
+import Mainpage from '../../features/mainPage';
+
 const Main = () => {
-  return <div>main</div>;
+  return <Mainpage />;
 };
 
 export default Main;
