@@ -1,10 +1,20 @@
 import { useParams } from 'react-router';
 import styles from './teacherInfo.module.scss';
-import { Card, List } from 'antd';
+import { Card, List, Spin } from 'antd';
+import useGetTeacherByCode from '../../shared/hooks/useGetTeacherByCode';
 
 const TeacherInfo = () => {
   const { id } = useParams();
-  console.log(id);
+  const { data, isLodaing } = useGetTeacherByCode(Number(id));
+
+  if (isLodaing) {
+    return (
+      <div className={styles.root}>
+        <Spin />
+      </div>
+    );
+  }
+  console.log(data);
   return (
     <div className={styles.root}>
       <div className={styles.cardTeacher}>

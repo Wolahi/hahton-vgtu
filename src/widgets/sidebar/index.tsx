@@ -4,7 +4,6 @@ import VgtuLogo from '../../shared/assets/vgtuicon.png';
 import styles from './sidebar.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiOutlineSchedule } from 'react-icons/ai';
-import { PiStudentLight } from 'react-icons/pi';
 
 const itemsMenu = [
   {
@@ -16,11 +15,6 @@ const itemsMenu = [
     key: 'shedule',
     icon: <AiOutlineSchedule size={20} />,
     label: <span className={styles.text}>Расписание</span>,
-  },
-  {
-    key: 'studplan',
-    icon: <PiStudentLight size={20} />,
-    label: <span className={styles.text}>Учебный план</span>,
   },
 ];
 

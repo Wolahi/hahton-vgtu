@@ -1,27 +1,28 @@
 import styles from './main.module.scss';
-import { Avatar, List, Select } from 'antd';
+import { Avatar, Input, List, Spin } from 'antd';
 import VGTUBlueIcon from '../../shared/assets/vgtuBlueLogo.png';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import useGetTeachers from '../../shared/hooks/useGetTeachers';
 
 const Teacherpage = () => {
   const navigate = useNavigate();
+  const [vauleSerach, setValueSearch] = useState<string>('');
+  const { data, isLodaing } = useGetTeachers(vauleSerach);
+
+  console.log(data);
   return (
     <div className={styles.root}>
       <div className={styles.wriperInstruct}>
-        <Select
-          showSearch
+        <Input
+          value={vauleSerach}
+          onChange={(e) => setValueSearch(e.target.value)}
           className={styles.select}
           defaultValue="lucy"
-          options={[
-            { value: 'jack', label: 'Jack' },
-            { value: 'lucy', label: 'Lucy' },
-            { value: 'Yiminghe', label: 'yiminghe' },
-            { value: 'disabled', label: 'Disabled', disabled: true },
-          ]}
         />
       </div>
       <div className={styles.listTeacher}>
-        <List>
+        <List loading={isLodaing}>
           <List.Item className={styles.listItem} onClick={() => navigate(`/teacher-info/${20}`)}>
             <Avatar src={<img src={VGTUBlueIcon} />} className={styles.avatar} />
             <div className={styles.infoBloc}>

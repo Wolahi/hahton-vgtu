@@ -1,10 +1,19 @@
 import { useParams } from 'react-router';
 import styles from '../sheduleGroup/shedule.module.scss';
-import { Card, List } from 'antd';
+import { Card, List, Spin } from 'antd';
+import useGetGroupShedule from '../../shared/hooks/useGetGroupShedule';
 
 const SheduleGroup = () => {
   const { id } = useParams();
-  console.log(id);
+  const { data, isLodaing } = useGetGroupShedule(id || '');
+  if (isLodaing) {
+    return (
+      <div className={styles.root}>
+        <Spin />
+      </div>
+    );
+  }
+  console.log(id, data);
   return (
     <div className={styles.root}>
       <span className={styles.headerText}>Рассписание группы бпи</span>
