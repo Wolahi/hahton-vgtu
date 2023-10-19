@@ -1,7 +1,8 @@
 // @ts-ignore
 import Title from 'antd/es/typography/Title';
 import styles from './main.module.scss';
-import { Select, Space } from 'antd';
+import { Avatar, Select, Space } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 const Teacherpage = () => {
   return (
@@ -21,7 +22,14 @@ const Teacherpage = () => {
           />
         </Space>
       </div>
-      <Title>ФИО</Title>
+      <div className={styles.wriperInfo}>
+        <div>
+          <Space className={styles.img} size={50} wrap>
+            <Avatar src={<img src={''} alt="avatar" />} />
+          </Space>
+        </div>
+        <div className={styles.text}>Фамилия Имя Отчество</div>
+      </div>
     </div>
   );
 };
