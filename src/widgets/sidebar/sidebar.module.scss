@@ -3,36 +3,29 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 280px;
+  background-color: white;
   height: 100%;
-
-  :after {
-    content: "";
-    height: 100%;
-    width: 1px;
-    background-color: #CFCFCF;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
 }
 
 .sideBar {
-
   :after {
-    content: "";
-    height: 100%;
-    width: 1px;
-    background-color: black;
-    position: absolute;
-    right: 0;
-    top: 0;
+    width: 0px;
   }
 }
 
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+}
 
 .logo {
   width: 100px;
   height: 100px;
+}
+
+
+
+
+.text {
+  font: var(--font-m)
 }
