@@ -1,5 +1,7 @@
+import Shedules from '../../features/shedules';
+
 const Shedule = () => {
-  return <div>Shedule</div>;
+  return <Shedules />;
 };
 
 export default Shedule;
