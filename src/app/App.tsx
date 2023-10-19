@@ -2,7 +2,6 @@ import React from 'react';
 import { withRouter } from './providers';
 import { Routing } from '../pages';
 import styles from './styles/App.module.scss';
-import './styles/variables.scss';
 import SideBar from '../widgets/sidebar';
 import { Layout } from 'antd';
 import { Content } from 'antd/es/layout/layout';

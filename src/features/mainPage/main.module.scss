@@ -1,17 +1,33 @@
+.root {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+}
+
+.wrapperLogo {
+  display: flex;
+  border-radius: 20px 20px 0px 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #263145;
+}
+
 .logo {
   align-items: center;
-  width: 100%;
+  width: 100px;
 }
 .wriperInstruct {
+  padding: 12px;
+  flex-direction: column;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
-.instruct {
-  background-color: #7a88a2;
-  text-align: center;
-  color: #0c182d;
-  width: 50%;
-  border-radius: 20px;
-  border: 0.35rem solid;
-  border-color: #0c182d;
+
+.titleText {
+  font: var(--font-xl-bold);
+}
+
+.text {
+  font: var(--font-l);
 }

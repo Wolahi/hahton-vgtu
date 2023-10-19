@@ -1,13 +1,16 @@
 // @ts-ignore
-import Title from 'antd/es/typography/Title';
 import styles from './main.module.scss';
+import VgtuBlueLogo from '../../shared/assets/vgtuBlueLogo.png';
 
 const Mainpage = () => {
   return (
-    <div>
-      <img src="logo.jpg" className={styles.logo} />
+    <div className={styles.root}>
+      <div className={styles.wrapperLogo}>
+        <img src={VgtuBlueLogo} className={styles.logo} />
+      </div>
       <div className={styles.wriperInstruct}>
-        <Title level={3} className={styles.instruct}>
+        <div className={styles.titleText}>Инструкция использования</div>
+        <div className={styles.text}>
           Для начала работы выберете категорию поиска.
           <br />
           После выбора категории напишите в поле ввода
@@ -15,7 +18,7 @@ const Mainpage = () => {
           <br />
           Введя запрос вам выведится информация по той
           <br /> категории которую вы выбирали!
-        </Title>
+        </div>
       </div>
     </div>
   );
