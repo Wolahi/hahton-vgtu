@@ -1,0 +1,42 @@
+
+.root {
+  display: grid;
+  padding: 24px;
+  height: 100%;
+  gap: 20px;
+  grid-template-rows: auto 1fr;
+}
+
+.wrapperSelect {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.headerText {
+  font: var(--font-xl-bold);
+}
+
+.textHeader {
+  font: var(--font-l-bold);
+}
+
+.textCard {
+  font: var(--font-m);
+}
+
+.select {
+  width: 50% !important;
+}
+
+.gridRasp {
+  padding: 20px 0px;
+  display: grid;
+  height: 100%;
+  gap: 15px;
+  overflow: auto;
+  grid-template-columns: repeat(auto-fit, 350px);
+  grid-template-rows: repeat(auto-fit, 200px);
+}

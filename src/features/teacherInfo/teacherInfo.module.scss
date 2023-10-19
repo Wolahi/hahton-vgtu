@@ -1,0 +1,74 @@
+.root {
+  padding: 24px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.nameTechText {
+  font: var(--font-xl-bold)
+}
+
+.text {
+  font: var(--font-m);
+}
+
+.infoTeacher {
+  height: 50%;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+}
+
+.cardTeacher {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.photoWrapper {
+  position: relative;
+  max-height: 400px;
+  max-width: 300px;
+}
+
+.photo {
+  border-radius: 20px;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.headerText {
+  font: var(--font-xl-bold)
+}
+
+.subHeaderText {
+  font: var(--font-m-bold)
+}
+
+.cardTitleText {
+  color: #d1af68;
+  font: var(--font-m-bold)
+}
+
+.listItem {
+  display: flex;
+  justify-content: center;
+}
+
+.sheduleTeacher {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  height: 100%;
+  overflow: auto;
+}
+
+.cardsShedule {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 15px;
+}
