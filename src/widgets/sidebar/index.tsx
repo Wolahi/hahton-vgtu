@@ -1,36 +1,44 @@
 import { Menu } from 'antd';
 import { GiTeacher } from 'react-icons/gi';
-import { GrSchedules } from 'react-icons/gr';
 import VgtuLogo from '../../shared/assets/vgtuicon.png';
 import styles from './sidebar.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
+import { AiOutlineSchedule } from 'react-icons/ai';
+import { PiStudentLight } from 'react-icons/pi';
 
 const itemsMenu = [
   {
     key: 'teachers',
     icon: <GiTeacher size={20} />,
-    label: 'Преподаватели',
+    label: <span className={styles.text}>Преподаватели</span>,
   },
   {
     key: 'shedule',
-    icon: <GrSchedules size={20} />,
-    label: 'Расписисание',
+    icon: <AiOutlineSchedule size={20} />,
+    label: <span className={styles.text}>Расписание</span>,
   },
   {
     key: 'studplan',
-    icon: <GrSchedules size={20} />,
-    label: 'Учебный план',
+    icon: <PiStudentLight size={20} />,
+    label: <span className={styles.text}>Учебный план</span>,
   },
 ];
 
-export const SideBar = () => {
+const SideBar = () => {
   const nagivate = useNavigate();
   return (
     <div className={styles.root}>
       <Link to={'/'}>
         <img className={styles.logo} src={VgtuLogo} />
       </Link>
-      <Menu items={itemsMenu} className={styles.sideBar} onClick={(e) => nagivate(`/${e.key}`)} />
+      <Menu
+        mode="inline"
+        items={itemsMenu}
+        className={styles.sideBar}
+        onClick={(e) => nagivate(`/${e.key}`)}
+      />
     </div>
   );
 };
+
+export default SideBar;
