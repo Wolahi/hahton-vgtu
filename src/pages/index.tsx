@@ -6,6 +6,7 @@ const Shedule = lazy(() => import('./Shedule'));
 const Teachers = lazy(() => import('./Teachers'));
 const StudPlan = lazy(() => import('./StudPlan'));
 const SheduleByGrouop = lazy(() => import('./SheduleByGroup'));
+const TeeacherInfoId = lazy(() => import('./TeacherInfo'));
 export const Routing = () => {
   return (
     <Routes>
@@ -14,6 +15,7 @@ export const Routing = () => {
       <Route path="/teachers" element={<Teachers />} />
       <Route path="/studplan" element={<StudPlan />} />
       <Route path="/shedule-group/:id" element={<SheduleByGrouop />} />
+      <Route path="/teacher-info/:id" element={<TeeacherInfoId />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

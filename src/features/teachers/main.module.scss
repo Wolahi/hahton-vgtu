@@ -1,25 +1,75 @@
 .wriperInstruct {
   display: flex;
   justify-content: center;
+
 }
+
+.root {
+  padding: 24px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  height: 100%;
+}
+
 .select {
-  width: 1000px;
+  width: 50% !important;
 }
+
 .img {
   align-items: flex-start;
+  border-radius: 20px;
+}
+
+.avatar {
   width: 200px;
-  height: 250px;
-  border-radius: 20px;
-  border: 0.15rem solid;
-  border-color: #0c182d;
+  height: 200px;
 }
+
+
+.nameTechText {
+  font: var(--font-xl-bold)
+}
+
 .text {
-  border-radius: 20px;
-  border: 0.15rem solid;
-  border-color: #0c182d;
-  font: var(--font-xl-bold);
+  font: var(--font-m);
 }
+
 .wriperInfo {
   display: flex;
   gap: 50px;
 }
+
+.listTeacher {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 30px;
+}
+
+
+.listItem {
+  display: grid !important;
+  grid-template-columns: auto 1fr !important;
+
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center !important;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 1px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 7px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+}
+
+.infoBloc {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+
