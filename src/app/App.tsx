@@ -6,6 +6,7 @@ import SideBar from '../widgets/sidebar';
 import { Layout } from 'antd';
 import { Content } from 'antd/es/layout/layout';
 import Sider from 'antd/lib/layout/Sider';
+import './styles/global.scss';
 
 const App = () => {
   return (
