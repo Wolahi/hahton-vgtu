@@ -1,6 +1,6 @@
 // @ts-ignore
 import styles from './main.module.scss';
-import VgtuBlueLogo from '../../shared/assets/vgtuBlueLogo.png';
+import VgtuBlueLogo from '../../shared/assets/vgltuBlueLogo.png';
 
 const Mainpage = () => {
   return (

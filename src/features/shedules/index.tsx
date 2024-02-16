@@ -20,87 +20,128 @@ const Shedules = () => {
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          hoverable
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>
         </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
-          <span className={styles.textCard}>
-            Факультет компьютерных техноголий и информационных систем
-          </span>
-        </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
-          <span className={styles.textCard}>
-            Факультет компьютерных техноголий и информационных систем
-          </span>
-        </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
-          <span className={styles.textCard}>
-            Факультет компьютерных техноголий и информационных систем
-          </span>
-        </Card>
-        <Card hoverable title={<span className={styles.textHeader}>Группа бпи</span>}>
+        <Card
+          onClick={() => navigate(`/shedule-group/${1}`)}
+          hoverable
+          title={<span className={styles.textHeader}>Группа бпи</span>}
+        >
           <span className={styles.textCard}>
             Факультет компьютерных техноголий и информационных систем
           </span>

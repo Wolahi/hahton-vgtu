@@ -1,6 +1,6 @@
 import { Menu } from 'antd';
 import { GiTeacher } from 'react-icons/gi';
-import VgtuLogo from '../../shared/assets/vgtuicon.png';
+import VgtuLogo from '../../shared/assets/vgltuicon.png';
 import styles from './sidebar.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiOutlineSchedule } from 'react-icons/ai';

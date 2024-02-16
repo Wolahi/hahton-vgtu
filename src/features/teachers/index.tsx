@@ -1,6 +1,6 @@
 import styles from './main.module.scss';
 import { Avatar, List, Select } from 'antd';
-import VGTUBlueIcon from '../../shared/assets/vgtuBlueLogo.png';
+import VGTUBlueIcon from '../../shared/assets/vgltuBlueLogo.png';
 import { useNavigate } from 'react-router-dom';
 
 const Teacherpage = () => {

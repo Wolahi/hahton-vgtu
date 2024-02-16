@@ -1,21 +1,18 @@
 .root {
   height: 100%;
   display: grid;
+  border-radius: 20px 20px 0 0;
   grid-template-rows: 50% 50%;
   gap: 10px;
 }
 
 .wrapperLogo {
   display: flex;
-  border-radius: 20px 20px 0px 0px;
-  align-items: center;
-  justify-content: center;
-  background-color: #263145;
 }
 
 .logo {
   align-items: center;
-  width: 100px;
+  width: 100%;
 }
 .wriperInstruct {
   padding: 12px;
